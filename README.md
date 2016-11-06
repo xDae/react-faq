@@ -65,7 +65,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 * 🔥 [Todas las cosas terribles que hice la primera vez que escribí una Aplicación Compleja con React ](https://youtu.be/Fk--XUEorvc?t=20666) Raquel @raquelxmoss
 * [Enseñando React sin usar React](https://medium.com/@ericclemmons/teaching-react-without-using-react-a4b87cfd4e87#.q8cyvryw1) Eric Clemmons @ericclemmons
 * [React en 7 Minutos](https://egghead.io/lessons/react-react-in-7-minutes) es un poco antiguo, pero es un buen comienzo
-* [Introducción to React](https://mva.microsoft.com/en-US/training-courses/introduction-to-react-16635?l=4wrKgdJrC_206218965) Eric W. Greene / Microsoft Virtual Academy
+* [Introducción a React](https://mva.microsoft.com/en-US/training-courses/introduction-to-react-16635?l=4wrKgdJrC_206218965) Eric W. Greene / Microsoft Virtual Academy
 * [Libros](#books)
 
 #Historia
@@ -84,7 +84,6 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 [React Create App + Express](https://www.youtube.com/watch?v=gbVhmaW04bc&feature=youtu.be) @sprjrx @ladyleet
 
 
-**Can I play around with React Online?**
 **¿Donde puedo probar React Online?**
 
 * [extends React.Component style](http://codepen.io/Arney/pen/OXYqWb)
@@ -97,7 +96,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 * Componentes Componibles
 * Fácil uso en proyectos existentes
 * Declarativo
-* Funcional / Immutable friendly
+* Funcional / Inmutable
 
 
 **Es rápido?**
@@ -215,7 +214,7 @@ Los componentes se pueden utilizar (compuestos) de muchas maneras, ver los sigui
 * [4 tipos de Componentes React diferentes](https://www.peterbe.com/plog/4-different-kinds-of-react-component-styles) Peter Bengtsson @peterbe
 * [Functions as Child Components and Higher Order Components](http://rea.tech/functions-as-child-components-and-higher-order-components) Ken Ding
 
-**Functiones sin Estado** [```<Código />```](http://reactpatterns.com/#Stateless%20function)
+**Funciones sin Estado** [```<Código />```](http://reactpatterns.com/#Stateless%20function)
 
 * [Componentes React Funcionales sin Estado: Nueve puntos que pudo haber pasado por alto](https://medium.com/@housecor/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc#.iydj782xq) Cory House @housecor
 * [Abrazando Functiones en React](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30#.igvxagy0e) A. Sharif @sharifsbeat
@@ -400,18 +399,18 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 **¿Cuál es la mejor práctica para obtener datos de servidor en los componentes de React?**
 >Depende! Ver: [React AJAX Best Practices](http://andrewhfarmer.com/react-ajax-best-practices) Andrew H Farmer @ahfarmer
 
-* [Loading and Using External Data in React](http://mediatemple.net/blog/tips/loading-and-using-external-data-in-react) Chris Coyier @chriscoyier
+* [Carga y uso de datos externos con React](http://mediatemple.net/blog/tips/loading-and-using-external-data-in-react) Chris Coyier @chriscoyier
 
 #Patrones
 
-* [React Patterns](http://reactpatterns.com) @chantastic
+* [Patrones en React](http://reactpatterns.com) @chantastic
 * [React.js in patterns](http://krasimirtsonev.com/blog/article/react-js-in-design-patterns) Krasimir Tsonev
 * [Patterns For Style Composition In React](http://jxnblk.com/writing/posts/patterns-for-style-composition-in-react) Brent Jackson @jxnblk
-* [Make Your React Components Pretty](https://medium.com/walmartlabs/make-your-react-components-pretty-a1ae4ec0f56e#.ctwfvx379) Mark Brouch @markbrouch
+* [Haz tus Componentes de React bonitos](https://medium.com/walmartlabs/make-your-react-components-pretty-a1ae4ec0f56e#.ctwfvx379) Mark Brouch @markbrouch
 
 #Gotchas
 
-**What are some React Gotchas?**
+**¿Qué son los Gotchas en React?**
 
 * [React Gotchas](https://daveceddia.com/react-gotchas) Dave Ceddia
 
@@ -442,7 +441,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Cómo utilizo Librerías de terceros?**
 
-* [Integration with Third Party Libraries](https://www.youtube.com/watch?v=GWVjMHDKSfU&feature=youtu.be&a) Rally Coding
+* [Integración con Librerías de terceros](https://www.youtube.com/watch?v=GWVjMHDKSfU&feature=youtu.be&a) Rally Coding
 
 #Rendimiento
 
@@ -459,14 +458,14 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Cómo animo cosas en React?**
 
-* 🔥 💯 [Animating In React](https://youtu.be/Fk--XUEorvc?t=2344 Sarah Drasner) @sarah_edo
-* [UI Animations with React — The Right Way](https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935#.g8qmlz5d6) Joe Davis
-* [Animations with ReactTransitionGroup](https://medium.com/@cheapsteak/animations-with-reacttransitiongroup-4972ad7da286#.qmrksnixv) Chang Wang @CheapSteak
+* 🔥 💯 [Animando en React](https://youtu.be/Fk--XUEorvc?t=2344 Sarah Drasner) @sarah_edo
+* [Animaciones de la interfaz de usuario con React - El camino correcto](https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935#.g8qmlz5d6) Joe Davis
+* [Animaciones con ReactTransitionGroup](https://medium.com/@cheapsteak/animations-with-reacttransitiongroup-4972ad7da286#.qmrksnixv) Chang Wang @CheapSteak
 
 **¿Hay alguna API declarativa para animaciones?**
 
 * [React Motion](https://github.com/chenglou/react-motion)
-* [A gentle introduction to React Motion](https://medium.com/@nashvail/a-gentle-introduction-to-react-motion-dc50dd9f2459#.aio7blbsi)
+* [Una pequeña introducción a React Motion](https://medium.com/@nashvail/a-gentle-introduction-to-react-motion-dc50dd9f2459#.aio7blbsi)
 
 **¿Cómo puedo animar las transiciones de página?**
 
@@ -536,7 +535,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 #Testeo
 
-* [Testing React Applications](https://www.youtube.com/watch?v=eWN8F_WOBAQ) Jack Franklin
+* [Testeando Aplicaciones React](https://www.youtube.com/watch?v=eWN8F_WOBAQ) Jack Franklin
 * [People seem to laugh at this but I think it’s actually pretty reasonable](https://twitter.com/dan_abramov/status/762257231471579136) Dan Abramov @dan_abramov
 
 #Vídeos de Conferencias
@@ -552,13 +551,13 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 #Universal React
 
-* [React on the Server for Beginners](https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app) Luciano Mammino @loige
+* [React en el Servidor para principiantes](https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app) Luciano Mammino @loige
 
 #Pronfundizando en React
-* [Implementation Notes - How React Really Works](https://facebook.github.io/react/contributing/implementation-notes.html) Dan Abramov @dan_abramov
-* [Building React From Scratch](https://www.youtube.com/watch?v=_MAD4Oly9yg) Paul O'Shannessy @zpao
+* [Notas de implementación - Cómo funciona realmente React](https://facebook.github.io/react/contributing/implementation-notes.html) Dan Abramov @dan_abramov
+* [Construyendo una Aplicación React desde 0](https://www.youtube.com/watch?v=_MAD4Oly9yg) Paul O'Shannessy @zpao
 * [React Architecture – OSCON](http://blog.vjeux.com/2014/javascript/react-architecture-oscon.html) Christopher Chedeau @vjeux
-* [ReactJS: Under The Hood](https://www.youtube.com/watch?v=xsKYAa1ZXpQ) Boris Dinkevich @BorisDinkevich
+* [ReactJS: Bajo el capó](https://www.youtube.com/watch?v=xsKYAa1ZXpQ) Boris Dinkevich @BorisDinkevich
 * [REACT INTERNALS](https://zackargyle.github.io/react-internals-slides/#/?_k=7f19z9) Zack Argyle @ZackArgyle
 
 #React Fiber
@@ -578,7 +577,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Hay buenos recursos de video/cursos para aprender React?**
 
-* https://egghead.io/courses/react-fundamentals FREE (+ paid for others)
+* https://egghead.io/courses/react-fundamentals GRATIS (+ otros de pago)
 * https://reactforbeginners.com
 * https://app.pluralsight.com/courses/react-redux-react-router-es6
 * https://www.pluralsight.com/courses/react-flux-building-applications
@@ -587,7 +586,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * https://LearnRedux.com
 * https://egghead.io/courses/manage-complex-state-in-react-apps-with-mobx
 
-#A11Y
+#Accesibilidad (A11Y)
 
 **¿Qué pasa con la accesibilidad?**
 
@@ -595,9 +594,9 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 <hr>
 
-**¿Cómo manejo A11y en React?**
+**¿Cómo manejo la accesibilidad en React?**
 * [Excerpt from React.js Conf 2015 - Hype!](https://www.youtube.com/watch?v=z5e7kWSHWTg#t=631) Ryan Florence
-* [Bringing the Web Back to the Blind by Ryan Florence ](https://www.youtube.com/watch?v=YuzS-g6Qvq8) *Note:* not specific to React
+* [Bringing the Web Back to the Blind by Ryan Florence ](https://www.youtube.com/watch?v=YuzS-g6Qvq8) *Nota:* no es específico de React, sino un principio sólido sobre el tema.
 
 #Charlas
 * [React to the Future - Slide Deck](http://elijahmanor.com/talks/react-to-the-future/dist) Elijah Manor @elijahmanor
