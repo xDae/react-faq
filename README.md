@@ -35,7 +35,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 - [Mixins](#mixins)
 - [Internacionalización](#internacionalización)
 - [Rendimiento](#rendimiento)
-- [Animacioness](#animationes)
+- [Animaciones](#animationes)
 - [SVG y React](#svg-y-react)
 - [Guias de estilo para React](#guias-de-estilo-para-react)
 - [Redux and Mobx](#redux-y-mobx)
@@ -454,7 +454,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html)
 * [Quick slides on #reactjs performance](http://presentations.survivejs.com/react-performance/#/?_k=ivqhoe) Juho Vepsäläinen @bebraw
 
-#Animationes
+#Animaciones
 
 **¿Cómo animo cosas en React?**
 
