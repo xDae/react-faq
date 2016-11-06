@@ -1,59 +1,59 @@
 # React - Preguntas Frecuentes
 
-Esta guía pretende reunir contenido de calidad sobre los conceptos básicos de React en una solo sitio para una rápida referencia.
+Esta guía pretende reunir contenido de calidad sobre los conceptos básicos de React en un solo sitio para tener una referencia rápida.
 
 Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 
 ## Contenido
 
-- [Comienzo](#start)
-- [Historia](#history)
-- [Creando un Proyecto con React](#creating-a-react-project)
-- [¿Porque usar React?](#why-use-react)
+- [Comienzo](#comienzo)
+- [Historia](#historia)
+- [Creando un Proyecto con React](#creando-un-proyecto-con-react)
+- [¿Porque usar React?](#porque-usar-react)
 - [JSX](#jsx)
-- [El 'Virtual DOM'](#the-virtual-dom)
-- [Elementos React](#react-elements)
-- [Componentes](#components)
-- [Métodos del Ciclo de Vida](#lifecycle-methods)º
-- [Tipos de Componentes](#component-types)
-- [Buscando Componentes](#finding-components)
-- [Propiedades](#props)
-- [Prototipos](#proptypes)
-- [Estado](#state)
+- [El 'Virtual DOM'](#el-virtual-dom)
+- [Elementos React](#elementos-react)
+- [Componentes](#componentes)
+- [Métodos del Ciclo de Vida](#métodos-del-ciclo-de-vida)
+- [Tipos de Componentes](#tipos-de-componentes)
+- [Buscando Componentes](#buscando-componentes)
+- [Propiedades](#propiedades)
+- [Prototipos](#prototipos)
+- [Estado](#estado)
 - [Binding](#binding)
-- [Eventos](#events)
-- [Renderizado](#rendering)
-- [Keys](#keys)
-- [Refs](#refs)
-- [Contexto](#context)
-- [Formularios](#forms)
+- [Eventos](#eventos)
+- [Renderizado](#renderizado)
+- [Claves](#claves)
+- [Referencias](#referencias)
+- [Contexto](#contexto)
+- [Formularios](#formularios)
 - [Controlled Components](#controlled-components)
-- [React Ajax](#react-ajax)
-- [Patrones](#patterns)
+- [React Ajax](#ajax-en-react)
+- [Patrones](#patrones)
 - [Gotchas](#gotchas)
-- [PATENTES](#patents)
+- [PATENTES](#patentes)
 - [Mixins](#mixins)
-- [Internacionalización](#internationalization)
-- [Rendimiento](#performance)
-- [Animacioness](#animations)
-- [SVG & React](#svg--react)
-- [Guias de estilo para React](#react-style-guides)
-- [Redux and Mobx](#redux-and-mobx)
-- [Añadir React a una Aplicacion existente](#adding-react-to-an-existing-app)
-- [CSS y React](#css-and-react)
-- [Testing](#testing)
-- [Vídeos de Conferencias](#conference-videos)
-- [Contribuyendo a React JS](#contributing-to-react-js)
+- [Internacionalización](#internacionalización)
+- [Rendimiento](#rendimiento)
+- [Animacioness](#animationes)
+- [SVG y React](#svg-y-react)
+- [Guias de estilo para React](#guias-de-estilo-para-react)
+- [Redux and Mobx](#redux-y-mobx)
+- [Añadir React a una Aplicacion existente](#añadir-react-a-una-aplicacion-existente)
+- [CSS y React](#css-y-react)
+- [Testeo](#testeo)
+- [Vídeos de Conferencias](#vídeos-de-conferencias)
+- [Contribuyendo a React JS](#contribuyendo-a-react-js)
 - [Universal React](#universal-react)
-- [Deep Dive](#deep-dive)
+- [Profundizando en React](#profundizando-en-react)
 - [React Fiber](#react-fiber)
-- [Cursos en Video](#video-courses)
-- [A11Y](#a11y)
-- [Charlas](#talks)
-- [Entrenamiento](#training)
-- [Libros](#books)
-- [Listas de Correo](#newsletters)
-- [Preguntas de entrevistas](#interview-questions)
+- [Cursos en Video](#cursos-en-video)
+- [Accesibilidad (A11Y)](#Accesibilidad-a11y)
+- [Charlas](#charlas)
+- [Entrenamiento](#entrenamiento)
+- [Libros](#libros)
+- [Listas de Correo](#listas-de-correo)
+- [Preguntas de entrevistas](#preguntas-de-entrevistas)
 
 
 #Comienzo
@@ -331,9 +331,8 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 * [Return as soon as you know the answer](https://medium.com/@SimonRadionov/return-as-soon-as-you-know-the-answer-dec6369b9b67#.82kxymyki) @SimonRadionov
 
-#Keys
->React uses [keys](https://facebook.github.io/react/docs/reconciliation.html#keys) to help with Reconciliation (i.e. how it calculates the DOM diff for each render).
->React utiliza las [keys](https://facebook.github.io/react/docs/reconciliation.html#keys) para ayudar con la reconciliación (es decir, cómo calcula la diferencia del DOM para cada procesamiento).
+#Claves
+>React utiliza las Claves ([keys](https://facebook.github.io/react/docs/reconciliation.html#keys)) para ayudar con la reconciliación (es decir, cómo calcula la diferencia del DOM para cada procesamiento).
 
 ```
 <ul>
@@ -535,7 +534,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 * [convert 'css' to 'CSS in JS'](https://jsbin.com/dugija/edit?js,output) Kent C. Dodds
 
-#Testing
+#Testeo
 
 * [Testing React Applications](https://www.youtube.com/watch?v=eWN8F_WOBAQ) Jack Franklin
 * [People seem to laugh at this but I think it’s actually pretty reasonable](https://twitter.com/dan_abramov/status/762257231471579136) Dan Abramov @dan_abramov
@@ -555,7 +554,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 * [React on the Server for Beginners](https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app) Luciano Mammino @loige
 
-#Deep Dive
+#Pronfundizando en React
 * [Implementation Notes - How React Really Works](https://facebook.github.io/react/contributing/implementation-notes.html) Dan Abramov @dan_abramov
 * [Building React From Scratch](https://www.youtube.com/watch?v=_MAD4Oly9yg) Paul O'Shannessy @zpao
 * [React Architecture – OSCON](http://blog.vjeux.com/2014/javascript/react-architecture-oscon.html) Christopher Chedeau @vjeux
