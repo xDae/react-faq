@@ -509,6 +509,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 **¿Cómo escalar aplicaciones de React-Redux?**
 
 * [About folder structure, styling, data fetching, etc.](https://www.smashingmagazine.com/2016/09/how-to-scale-react-applications/) Max Stoiber @mxstbr
+* [Acerca de la estructura de carpetas, estilo, extracción de datos, etc.](https://www.smashingmagazine.com/2016/09/how-to-scale-react-applications/) Max Stoiber @mxstbr
 
 #Añadir React a una Aplicacion existente
 
@@ -516,27 +517,27 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 * [How to Sprinkle ReactJS into an Existing Web Application](https://scotch.io/tutorials/how-to-sprinkle-reactjs-into-an-existing-web-application) Andrew Del Prete @andrewdelprete
 * [Don't Rewrite, React!](https://www.youtube.com/watch?v=BF58ZJ1ZQxY) Ryan Florence
-* [Migrating Safely to React](https://www.youtube.com/watch?v=sXDZBxbRRag&list=PLNBNS7NRGKMG3uLrm5fgY02hJ87Wzb4IU&index=1) Jamis Charles
+* [Migrar con seguridad a React](https://www.youtube.com/watch?v=sXDZBxbRRag&list=PLNBNS7NRGKMG3uLrm5fgY02hJ87Wzb4IU&index=1) Jamis Charles
 
 #CSS y React
 
 **¿Qué pasa con los estilos en React?**
 
-* [Reusable React Component with Overridable Inline CSS Styles](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
-* [Inline Styles](https://facebook.github.io/react/tips/inline-styles.html)
+* [Componentes de React reutilizables con estilos en línea reemplazables](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
+* [Estilos en Línea](https://facebook.github.io/react/tips/inline-styles.html)
 * [PANEL ON 'INLINE STYLES'](http://shoptalkshow.com/episodes/180-panel-on-inline-styles) @ShopTalkShow
-* [CSS in JS may not be the solution to all your problems](https://blog.grommet.io/post/2016/08/10/css-in-js-may-not-be-the-solution-to-all-your-problems) Alan Souza
-* [CSS in JS + CSS Modules](http://www.dadsindev.com/12)
-* [CSS in JS tech chat](https://www.youtube.com/watch?v=BXOF_8jDdf8) Kent C. Dodds & Sarah Drasner
+* [CSS en JS puede que no sea la solución a todos sus problemas](https://blog.grommet.io/post/2016/08/10/css-in-js-may-not-be-the-solution-to-all-your-problems) Alan Souza
+* [CSS en JS + CSS Modules](http://www.dadsindev.com/12)
+* [CSS en JS: charla técnica](https://www.youtube.com/watch?v=BXOF_8jDdf8) Kent C. Dodds & Sarah Drasner
 
 **¿Hay alguna herramienta disponible para convertir 'CSS' a 'CSS en JS'?**
 
-* [convert 'css' to 'CSS in JS'](https://jsbin.com/dugija/edit?js,output) Kent C. Dodds
+* [convertir 'CSS' en 'CSS in JS'](https://jsbin.com/dugija/edit?js,output) Kent C. Dodds
 
 #Testeo
 
 * [Testeando Aplicaciones React](https://www.youtube.com/watch?v=eWN8F_WOBAQ) Jack Franklin
-* [People seem to laugh at this but I think it’s actually pretty reasonable](https://twitter.com/dan_abramov/status/762257231471579136) Dan Abramov @dan_abramov
+* [La gente parece reírse de esto, pero creo que es realmente bastante razonable](https://twitter.com/dan_abramov/status/762257231471579136) Dan Abramov @dan_abramov
 
 #Vídeos de Conferencias
 * [React.js Conf 2016](https://www.youtube.com/watch?v=MGuKhcnrqGA&list=PLb0IAmt7-GS0M8Q95RIc2lOM6nc77q1IY)
@@ -547,7 +548,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Dónde puedo aprender sobre como contribuir a React JS?**
 
-* [Contributing to React JS](https://www.youtube.com/watch?v=wUpPsEcGsg8) Kent C. Dodds
+* [Contribuyendo a React JS](https://www.youtube.com/watch?v=wUpPsEcGsg8) Kent C. Dodds
 
 #Universal React
 
