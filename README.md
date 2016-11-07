@@ -81,6 +81,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 
 * 💯 [create-react-app](https://github.com/facebookincubator/create-react-app)
 * [nwb](https://github.com/insin/nwb) si necesitas más control sobre la configuración
+* [ToDoMVC ReactJS Paso a paso](https://github.com/davecarter/todoMVC-ReactJS)
 
 **¿Donde puedo encontrar videos de como usar 'React Create App'?**
 
