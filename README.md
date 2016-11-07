@@ -4,6 +4,9 @@ Esta guía pretende reunir contenido de calidad sobre los conceptos básicos de 
 
 Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 
+### Otros idiomas
+[🇬🇧 English](https://github.com/timarney/react-faq)
+
 ## Contenido
 
 - [Comienzo](#comienzo)
@@ -152,7 +155,7 @@ https://twitter.com/acdlite/status/779693791607336960
 > React keeps your product reasonably fast without you having to think about it all the time, or to jump through the hoops **@dan_abramov**
 
 #Elementos React
-> Los elementos son los bloques de construcción más pequeños en las aplicaciones de React.
+> Los elementos son los bloques de construcción más pequeños en las aplicaciones React.
 > Los Elementos son los componentes que están "hechos de ..."
 — [Documentación de React](https://facebook.github.io/react/docs/rendering-elements.html)
 
@@ -160,7 +163,7 @@ https://twitter.com/acdlite/status/779693791607336960
 * [Entendiendo la diferencia entre un Elemento React y un Componente React](https://quickleft.com/blog/understanding-the-difference-between-react-elements-and-components) Alex Johnson
 
 #Componentes
-> Los Componentes te permiten dividir la interfaz en piezas independientes y reutilizables,y pensar en cada pieza de forma aislada. Conceptualmente, los componentes son como funciones de JavaScript. - [Documentación de React](https://facebook.github.io/react/docs/components-and-props.html)
+> Los Componentes te permiten dividir la interfaz en piezas independientes y reutilizables, y pensar en cada pieza de forma aislada. Conceptualmente, los componentes son como funciones de JavaScript. - [Documentación de React](https://facebook.github.io/react/docs/components-and-props.html)
 
 **¿Cuáles son las mejores prácticas al trabajar con componentes?**
 
@@ -181,7 +184,7 @@ Ver :  https://twitter.com/mxstbr/status/790084862954864640 Max Stoiber @mxstbr
 
 **¿Qué son los métodos del ciclo de vida?**
 
-* [Diagrama de los Ciclos de vida de los Componentes de React](http://codepen.io/eduardoboucas/full/jqWbdb) Eduardo Bouças @eduardoboucas
+* [Diagrama de los Ciclos de vida de los Componentes React](http://codepen.io/eduardoboucas/full/jqWbdb) Eduardo Bouças @eduardoboucas
 * [Ir más allá con los métodos del ciclo de vida de React](https://medium.com/@notrab/going-further-with-react-lifecycle-methods-2ffdc5bdf52c#.bu0ufrosb) Jamie Barton
 * [Especificaciones de los Componentes y los Ciclos de Vida](https://facebook.github.io/react/docs/component-specs.html)
 * [My #reactjs component lifecycle cheatsheet for quick reference](https://twitter.com/pbesh/status/738008776805060608) Peter Beshai @pbesh
@@ -238,7 +241,7 @@ Los componentes se pueden utilizar (compuestos) de muchas maneras, ver los sigui
 * [I've mentioned this before, but I'm a big fan of child functions in React](https://twitter.com/brian_d_vaughn/status/779362701596164097) Brian Vaughn @brian_d_vaughn
 * [He mencionado esto antes, pero soy un gran fan de las funciones hijas en React](https://twitter.com/brian_d_vaughn/status/779362701596164097) Brian Vaughn @brian_d_vaughn
 
-**¿Qué tipos de componentes hay?**
+**¿Qué tipos de Componentes hay?**
 
 * [React Component Jargon as of August 2016](https://blog.anthonycomito.com/react-component-jargon-as-of-august-2016-28451d8ceb1d#.a417p5u26) Anthony Comito @a_comito
 
@@ -307,8 +310,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 #Binding
 >El método bind de JavaScript tiene varios usos. Normalmente, se utiliza para preservar el contexto de ejecución de una función que se ejecuta en otro contexto.
 
-**What should you use for binding methods in React classes?**
-**¿Qué debe usar para conectar métodos en Clases de React?**
+**¿Qué debe usar para conectar métodos en Clases React?**
 * [To bind or not to bind?](https://twitter.com/dan_abramov/status/790612782471319553) Dan Abramov @dan_abramov
 * [fat Arrow vS Autobind VS bind](https://www.reddit.com/r/reactjs/comments/54xnao/fat_arrow_vs_autobind_vs_bindbindbindbindbind/d85wj0l) Dan Abramov @dan_abramov
 
@@ -342,7 +344,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 **¿Por qué no puedo poner la key en las propiedades (o definir el valor predeterminado en otro lugar)?**
 
-* [Why can't i put key in default props](https://www.reddit.com/r/reactjs/comments/4mjdcf/why_cant_i_put_key_in_default_props_or_define_the/d3xwa6m)
+* [¿Por qué no puedo poner la clave en las Propiedades por defecto](https://www.reddit.com/r/reactjs/comments/4mjdcf/why_cant_i_put_key_in_default_props_or_define_the/d3xwa6m)
 
 **¿Qué debo utilizar para una key?**
 
@@ -396,7 +398,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 #Ajax en React
 
-**¿Cuál es la mejor práctica para obtener datos de servidor en los componentes de React?**
+**¿Cuál es la mejor práctica para obtener datos de servidor en los componentes React?**
 >Depende! Ver: [React AJAX Best Practices](http://andrewhfarmer.com/react-ajax-best-practices) Andrew H Farmer @ahfarmer
 
 * [Carga y uso de datos externos con React](http://mediatemple.net/blog/tips/loading-and-using-external-data-in-react) Chris Coyier @chriscoyier
@@ -486,7 +488,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [Icons as React Components](https://medium.com/@david.gilbertson/icons-as-react-components-de3e33cb8792#.lmbz3v9ic)
 * [Creating an SVG Icon System with React](https://css-tricks.com/creating-svg-icon-system-react) @sarah_edo
 
-#Guias de estilo para React
+#Guías de estilo para React
 
 **¿Dónde puedo encontrar buenas guías de estilo para React?**
 
@@ -506,12 +508,12 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367#.kgnqdp8p6) Dan Abramov @dan_abramov
 * [Redux or MobX: An attempt to dissolve the Confusion](http://www.robinwieruch.de/redux-mobx-confusion/) Robin Wieruch @rwieruch
 
-**¿Cómo escalar aplicaciones de React-Redux?**
+**¿Cómo escalar aplicaciones React-Redux?**
 
 * [About folder structure, styling, data fetching, etc.](https://www.smashingmagazine.com/2016/09/how-to-scale-react-applications/) Max Stoiber @mxstbr
 * [Acerca de la estructura de carpetas, estilo, extracción de datos, etc.](https://www.smashingmagazine.com/2016/09/how-to-scale-react-applications/) Max Stoiber @mxstbr
 
-#Añadir React a una Aplicacion existente
+#Añadir React a una Aplicación existente
 
 **¿Cómo empiezo a integrar React en una aplicación existente?**
 
@@ -523,7 +525,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Qué pasa con los estilos en React?**
 
-* [Componentes de React reutilizables con estilos en línea reemplazables](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
+* [Componentes React reutilizables con estilos en línea reemplazables](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
 * [Estilos en Línea](https://facebook.github.io/react/tips/inline-styles.html)
 * [PANEL ON 'INLINE STYLES'](http://shoptalkshow.com/episodes/180-panel-on-inline-styles) @ShopTalkShow
 * [CSS en JS puede que no sea la solución a todos sus problemas](https://blog.grommet.io/post/2016/08/10/css-in-js-may-not-be-the-solution-to-all-your-problems) Alan Souza
@@ -630,7 +632,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 #Listas de Correo
 
-**¿Dónde puedo encontrar listas de correo sobre de React?**
+**¿Dónde puedo encontrar listas de correo sobre React?**
 
 * [React.js Newsletter](http://reactjsnewsletter.com)
 * [React Status](http://react.statuscode.com)
@@ -640,7 +642,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 #Preguntas de entrevistas
 
-* [12 Essential React.js Interview Questions](https://www.toptal.com/react/interview-questions)
+* [12 preguntas esenciales en una entrevista de React.js](https://www.toptal.com/react/interview-questions)
 * [React Interview Questions](https://github.com/eltonjuan/react-interview-questions/blob/master/ReactInterviewQuestions.md)
 * [quiz.md](https://gist.github.com/gaearon/8fa9fdd2c4197ee0b52894877bf587a4) Dan Abramov @dan_abramov
 * [5 Essential React.js Interview Questions](https://www.codementor.io/reactjs/tutorial/5-essential-reactjs-interview-questions)
