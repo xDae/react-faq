@@ -7,6 +7,8 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 ### Otros idiomas
 [🇬🇧 English](https://github.com/timarney/react-faq)
 
+[🇨🇳 简体中文](https://github.com/justjavac/react-faq)
+
 ## Contenido
 
 - [Comienzo](#comienzo)
