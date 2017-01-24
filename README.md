@@ -2,12 +2,32 @@
 
 Esta guía pretende reunir contenido de calidad sobre los conceptos básicos de React en un solo sitio para tener una referencia rápida.
 
-Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
+Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien).
 
 ### Otros idiomas
 [🇬🇧 English](https://github.com/timarney/react-faq)
-
 [🇨🇳 简体中文](https://github.com/justjavac/react-faq)
+
+#Comienzo
+
+>Hay mucho que aprender, pero si se desglosa, hay algunos conceptos clave en los que enfocarse. JSX, elementos React, Componentes, Métodos de ciclo de vida, Propiedades y Estado. Los siguientes artículos le iniciarán en el camino hacia el aprendizaje de React.
+
+**No sé nada de React, ¿que debería ver / leer antes de empezar?**
+* [Pensando en React - Pete Hunt](https://facebook.github.io/react/docs/thinking-in-react.html)
+* 🔥 [Enseñando React sin usar React](https://medium.com/@ericclemmons/teaching-react-without-using-react-a4b87cfd4e87#.q8cyvryw1) Eric Clemmons @ericclemmons
+* 🔥 [13 cosas que necesitas saber sobre React](http://aimforsimplicity.com/post/13-things-you-need-to-know-about-react)  @kjendrzyca
+* [Las 5 cosas que necesitas saber para entender React](https://medium.com/@sachagreif/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3#.uii8of7um) Sacha Greif
+
+**La documentación oficial de React es un gran recurso**
+* [Documentación Oficial de React](https://facebook.github.io/react/docs/hello-world.html)
+
+**Additional information to start with**
+* [Pete Hunt: React: Rethinking best practices (JSConf EU 2013)](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
+* [React in 7 Minutos](https://egghead.io/lessons/react-react-in-7-minutes) this is a slightly dated but still really good starter
+* [Introducción completa a React - React, Webpack, Babel, Redux, React Router, SSR](https://btholt.github.io/complete-intro-to-react/) Brian Holt(@holtbt) for Frontend Masters worshop
+* [React "Aha" Moments](https://tylermcginnis.com/react-aha-moments) Tyler McGinnis @tylermcginnis33
+* [Todas las cosas terribles que hice la primera vez que escribí una Aplicación Compleja con React](https://youtu.be/Fk--XUEorvc?t=20666) Raquel @raquelxmoss
+* [Introducción a React](https://mva.microsoft.com/en-US/training-courses/introduction-to-react-16635?l=4wrKgdJrC_206218965) Eric W. Greene / Microsoft Virtual Academy
 
 ## Contenido
 
@@ -60,19 +80,6 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 - [Listas de Correo](#listas-de-correo)
 - [Preguntas de entrevistas](#preguntas-de-entrevistas)
 
-
-#Comienzo
-
-**No sé nada de React, ¿que debería ver / leer antes de empezar?**
-* [Documentación Oficial de React](https://facebook.github.io/react/docs/hello-world.html)
-* [Pensando en React - Pete Hunt](https://facebook.github.io/react/docs/thinking-in-react.html)
-* [Pete Hunt: React: Rethinking best practices (JSConf EU 2013)](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
-* 🔥 [Todas las cosas terribles que hice la primera vez que escribí una Aplicación Compleja con React ](https://youtu.be/Fk--XUEorvc?t=20666) Raquel @raquelxmoss
-* [Enseñando React sin usar React](https://medium.com/@ericclemmons/teaching-react-without-using-react-a4b87cfd4e87#.q8cyvryw1) Eric Clemmons @ericclemmons
-* [React en 7 Minutos](https://egghead.io/lessons/react-react-in-7-minutes) es un poco antiguo, pero es un buen comienzo
-* [Introducción a React](https://mva.microsoft.com/en-US/training-courses/introduction-to-react-16635?l=4wrKgdJrC_206218965) Eric W. Greene / Microsoft Virtual Academy
-* [Libros](#books)
-
 #Historia
 * [JSConfUS 2013 - Tom Occhino and Jordan Walke: JS Apps at Facebook](https://www.youtube.com/watch?v=GW0rj4sNH2w&index=10&list=PL37ZVnwpeshF7AHpbZt33aW0brYJyNftx) The one where React became #OSS
 * [Our First 50,000 Stars](https://facebook.github.io/react/blog/2016/09/28/our-first-50000-stars.html) Vjeux @vjeux
@@ -81,8 +88,17 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 
 **¿Como creo un nuevo Proyecto con React?**
 
-* 💯 [create-react-app](https://github.com/facebookincubator/create-react-app)
-* [nwb](https://github.com/insin/nwb) si necesitas más control sobre la configuración
+> Depende de lo que estas buscando. Con/sin configuración, server-rendering etc... aqui hay algunos para considerar. Obviamente, también puedes configurar React desde cero.
+
+* [create-react-app](https://github.com/facebookincubator/create-react-app) No configuration or complicated folder structures, just the files you need to build your app.
+* [nwb](https://github.com/insin/nwb) Crea aplicaciones React sin configuración (hasta que lo necesites)
+* [next.js](https://github.com/zeit/next.js) A minimalistic framework for universal server-rendered React applications
+* [react-server](https://github.com/redfin/react-server) Batteries-included Server-rendered React applications. Note: also see [React 30 -> 002 - Streaming React](https://www.youtube.com/watch?v=XW_c60NCkI4)
+* [react-boilerplate](https://github.com/mxstbr/react-boilerplate) A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
+* [create-react-pwa](https://github.com/jeffposnick/create-react-pwa create-react-app) + Progressive Web App goodness
+* [gatsby](https://github.com/gatsbyjs/gatsby) Transform plain text into dynamic blogs and websites using React.js
+
+Ver también estos proyectos [projects](https://github.com/facebookincubator/create-react-app#alternatives)
 
 **¿Donde puedo encontrar videos de como usar 'React Create App'?**
 
@@ -94,6 +110,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensucie (está bien).
 * [extends React.Component style](http://codepen.io/Arney/pen/OXYqWb)
 * [React.createClass style](http://codepen.io/Arney/pen/QERoaQ)
 * [React JSBin](http://react.jsbin.com/?html,css,js,output)
+* [WebpackBin](http://www.webpackbin.com/EkscblgMM)
 
 #¿Porque usar React?
 
