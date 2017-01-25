@@ -6,6 +6,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 ### Otros idiomas
 [🇬🇧 English](https://github.com/timarney/react-faq)
+
 [🇨🇳 简体中文](https://github.com/justjavac/react-faq)
 
 #Comienzo
@@ -31,7 +32,6 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 ## Contenido
 
-- [Comienzo](#comienzo)
 - [Historia](#historia)
 - [Creando un Proyecto con React](#creando-un-proyecto-con-react)
 - [¿Porque usar React?](#porque-usar-react)
@@ -45,6 +45,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 - [Propiedades](#propiedades)
 - [Prototipos](#prototipos)
 - [Estado](#estado)
+- [Children API](#children-api)
 - [Binding](#binding)
 - [Eventos](#eventos)
 - [Renderizado](#renderizado)
@@ -66,8 +67,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 - [Redux and Mobx](#redux-y-mobx)
 - [Añadir React a una Aplicacion existente](#añadir-react-a-una-aplicacion-existente)
 - [CSS y React](#css-y-react)
-- [Testeo](#testeo)
-- [Vídeos de Conferencias](#vídeos-de-conferencias)
+- [Testing](#testing)
 - [Contribuyendo a React JS](#contribuyendo-a-react-js)
 - [Universal React](#universal-react)
 - [Profundizando en React](#profundizando-en-react)
@@ -75,10 +75,12 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 - [Cursos en Video](#cursos-en-video)
 - [Accesibilidad (A11Y)](#Accesibilidad-a11y)
 - [Charlas](#charlas)
-- [Entrenamiento](#entrenamiento)
+- [Cursos](#cursos)
 - [Libros](#libros)
 - [Listas de Correo](#listas-de-correo)
 - [Preguntas de entrevistas](#preguntas-de-entrevistas)
+- [Herramientas](#herramientas)
+- [Renderizado desde el servidor](#renderizado-desde-el-servidor)
 
 #Historia
 * [JSConfUS 2013 - Tom Occhino and Jordan Walke: JS Apps at Facebook](https://www.youtube.com/watch?v=GW0rj4sNH2w&index=10&list=PL37ZVnwpeshF7AHpbZt33aW0brYJyNftx) The one where React became #OSS
@@ -86,7 +88,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 #Creando un Proyecto con React
 
-**¿Como creo un nuevo Proyecto con React?**
+**¿Cómo creo un nuevo Proyecto con React?**
 
 > Depende de lo que estas buscando. Con/sin configuración, server-rendering etc... aqui hay algunos para considerar. Obviamente, también puedes configurar React desde cero.
 
@@ -100,12 +102,12 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 Ver también estos proyectos [projects](https://github.com/facebookincubator/create-react-app#alternatives)
 
-**¿Donde puedo encontrar videos de como usar 'React Create App'?**
+**¿Dónde puedo encontrar videos de como usar 'React Create App'?**
 
 [React Create App + Express](https://www.youtube.com/watch?v=gbVhmaW04bc&feature=youtu.be) @sprjrx @ladyleet
 
 
-**¿Donde puedo probar React Online?**
+**¿Dónde puedo probar React Online?**
 
 * [extends React.Component style](http://codepen.io/Arney/pen/OXYqWb)
 * [React.createClass style](http://codepen.io/Arney/pen/QERoaQ)
@@ -148,6 +150,7 @@ Ver también estos proyectos [projects](https://github.com/facebookincubator/cre
 >El DOM virtual proporciona una implementación ligera del DOM y del sistema de eventos. En lugar de tratar con el navegador, manipula una versión en memoria del DOM.
 
 **¿Qué es el Virtual DOM?**
+* 💯  [El funcionamiento interno del Virtual DOM](https://medium.com/@rajaraodv/the-inner-workings-of-virtual-dom-666ee7ad47cf#.q3jxayda5) @rajaraodv
 * [React's diff algorithm](http://calendar.perfplanet.com/2013/diff/) Christopher Chedeau @vjeux
 * [La única cosa que nadie explica correctamente sobre React - ¿Por qué el Virtual DOM?](https://hashnode.com/post/the-one-thing-that-no-one-properly-explains-about-react-why-virtual-dom-cisczhfj41bmssp53mvfwmgrq) Sai Kishore Komanduri @saiki
 * [Pete Hunt: Los secretos del Virtual DOM de React (FutureJS 2014)](https://www.youtube.com/watch?v=-DX3vJiqxm4)
@@ -180,6 +183,7 @@ https://twitter.com/acdlite/status/779693791607336960
 
 * [Qué hace un 'Elemento' un 'Elemento' vs un componente?](https://twitter.com/timarney/status/790540834466701312) Tim Arney @timarney
 * [Entendiendo la diferencia entre un Elemento React y un Componente React](https://quickleft.com/blog/understanding-the-difference-between-react-elements-and-components) Alex Johnson
+* [Elementos React vs Componentes React](https://tylermcginnis.com/react-elements-vs-react-components) Tyler McGinnis
 
 #Componentes
 > Los Componentes te permiten dividir la interfaz en piezas independientes y reutilizables, y pensar en cada pieza de forma aislada. Conceptualmente, los componentes son como funciones de JavaScript. - [Documentación de React](https://facebook.github.io/react/docs/components-and-props.html)
@@ -230,16 +234,20 @@ class Welcome extends React.Component {
 Los componentes se pueden utilizar (compuestos) de muchas maneras, ver los siguientes enlaces para patrones e ideas para la creación de componentes.
 
 **¿Cómo decido qué tipo de Componente utilizar?**
+>Se reduce a pocos factores... uno de los principales es dedicir lo que un componente debe hacer.
+Ver: [Some Thoughts on Function Components in React](https://medium.com/javascript-inside/some-thoughts-on-function-components-in-react-cb2938686bc7#.2oazdyli1) from A. Sharif @sharifsbeat for some help deciding.
+
+También:
 
 * [React.Component vs React.createClass](https://reactjsnews.com/composing-components) Naman Goel & Zach Silveira
 * [React.createClass vs extends React.Component](https://toddmotto.com/react-create-class-versus-component) Todd Motto
 * [4 tipos de Componentes React diferentes](https://www.peterbe.com/plog/4-different-kinds-of-react-component-styles) Peter Bengtsson @peterbe
-* [Functions as Child Components and Higher Order Components](http://rea.tech/functions-as-child-components-and-higher-order-components) Ken Ding
+* [Funciones como Componentes Hijo (Child Components) y Componentes de alto nivel (Higher Order Components)](http://rea.tech/functions-as-child-components-and-higher-order-components) Ken Ding
 
 **Funciones sin Estado** [```<Código />```](http://reactpatterns.com/#Stateless%20function)
 
 * [Componentes React Funcionales sin Estado: Nueve puntos que pudo haber pasado por alto](https://medium.com/@housecor/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc#.iydj782xq) Cory House @housecor
-* [Abrazando Functiones en React](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30#.igvxagy0e) A. Sharif @sharifsbeat
+* [Adoptando Funciones en React](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30#.igvxagy0e) A. Sharif @sharifsbeat
 
 **Presentational and Container Components**  [```<Código />```](http://reactpatterns.com/#Container%20component)
 
@@ -247,6 +255,7 @@ Los componentes se pueden utilizar (compuestos) de muchas maneras, ver los sigui
 
 **Higher-Order Components** [```<Código />```](http://reactpatterns.com/#Higher-order%20component)
 
+* [ReactCasts #1 - Higher Order Components](https://www.youtube.com/watch?v=LTunyI2Oyzw) Cassio Zen @cassiozen
 * [React Higher Order Components in depth](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.mpb29ree6) @franleplant
 * [Higher Order Components: A React Application Design Pattern](https://www.sitepoint.com/react-higher-order-components) Jack Franklin @Jack_Franklin
 * [Mixins Are Dead. Long Live Composition](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.prpfdo79n) Dan Abramov @dan_abramov
@@ -280,7 +289,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 **¿Como puedo pasar Propiedades?**
 
-* [Transfiriendo Props](https://facebook.github.io/react/docs/transferring-props.html)
+* [Transfiriendo Propiedades](https://facebook.github.io/react/docs/transferring-props.html)
 
 **¿Como paso valores Booleanos?**
 
@@ -316,7 +325,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 * [Los 5 Tipos de Estado en una aplicación React](http://jamesknelson.com/5-types-react-application-state) James K Nelson @james_k_nelson
 * [State of React #1: A Stateless React App?](http://jamesknelson.com/state-react-1-stateless-react-app) James K Nelson @james_k_nelson
 * [A Case for setState](https://medium.com/@zackargyle/a-case-for-setstate-1f1c47cd3f73#.w89epdtmo) Zack Argyle
-* [¿Donde conservo los datos de un Componente React?: state, store, static, and this](https://medium.freecodecamp.com/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00#.8k7tc37cs) Sam Corcos
+* [¿Dónde conservo los datos de un Componente React?: state, store, static, and this](https://medium.freecodecamp.com/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00#.8k7tc37cs) Sam Corcos
 * [Como manejar el Estado en React. The missing FAQ](https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c#.dwz84fx9s) Osmel Mora @osmel_mora
 * [Should I keep something in React component state? I made a small cheatsheet.](https://twitter.com/dan_abramov/status/749710501916139520) Dan Abramov @dan_abramov
 * [Best Practices for Component State in React.js](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html) Gabe Scholz @gabescholz
@@ -325,6 +334,17 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 **¿Cómo puedo desacoplar el estado y la interfaz de usuario?**
 
 * [Cómo puedo desacoplar el estado y la interfaz de usuario](https://medium.com/@mweststrate/how-to-decouple-state-and-ui-a-k-a-you-dont-need-componentwillmount-cc90b787aa37#.7l8ji1wer) Michel Weststrate @mweststrate
+
+**Vengo de jQuery... ¿cómo puedo adaptarme mentalmente para trabajar con React / Estado?**
+* [Thinking Statefully](https://daveceddia.com/thinking-statefully) Dave Ceddia @dceddia
+
+**I heard you can pass a function to setState when should do that?**
+**Escuché que se puede pasar una función a setState ¿cuando debería hacer eso?**
+* [Usando una funció en `setState` en vez de un objeto](https://medium.com/@shopsifter/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1#.h3fokbh9a) Sophia Shoemaker
+
+#Children API
+
+* [ReactCasts #3 - React's Children API](https://www.youtube.com/watch?v=DJ53-G8EbxE) Cassio Zen @cassiozen
 
 #Binding
 >El método bind de JavaScript tiene varios usos. Normalmente, se utiliza para preservar el contexto de ejecución de una función que se ejecuta en otro contexto.
@@ -349,7 +369,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 **¿Qué debe ir en la función de render?**
 
-* [Return as soon as you know the answer](https://medium.com/@SimonRadionov/return-as-soon-as-you-know-the-answer-dec6369b9b67#.82kxymyki) @SimonRadionov
+* [La respuesta es devolver algo (return) lo antes posible](https://medium.com/@SimonRadionov/return-as-soon-as-you-know-the-answer-dec6369b9b67#.82kxymyki) @SimonRadionov
 
 #Claves
 >React utiliza las Claves ([keys](https://facebook.github.io/react/docs/reconciliation.html#keys)) para ayudar con la reconciliación (es decir, cómo calcula la diferencia del DOM para cada procesamiento).
@@ -385,6 +405,8 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 #Contexto
 ⚠️ El contexto es una **característica avanzada y experimental**. Es probable que la API cambie en futuras versiones. Los rumores de su existencia son verdaderos pero ten cuidado!
 
+* [ReactCasts #4 - Context (Part 1)](https://www.youtube.com/watch?v=lxq938kqIss&t=1s) Cassio Zen @cassiozen
+* [ReactCasts #5 - Context (Part 2)](https://www.youtube.com/watch?v=mwYHDXS6uSc&feature=youtu.be) Cassio Zen @cassiozen
 * [How to handle React context in a reliable way](https://medium.com/react-ecosystem/how-to-handle-react-context-a7592dfdcbc#.rtwgxxy0d) Osmel Mora @osmel_mora
 * [How to safely use React context](https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076#.m6v9tsgub) Michel Weststrate @mweststrate
 * [Context all the things with React](https://www.youtube.com/watch?v=k9AhBMwj1w4) Stephen Rivas Jr. (@sprjrx)
@@ -433,7 +455,9 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 **¿Qué son los Gotchas en React?**
 
-* [React Gotchas](https://daveceddia.com/react-gotchas) Dave Ceddia
+* [React Gotchas](https://daveceddia.com/react-gotchas) Dave Ceddia @dceddia 
+* [How to Render Components Outside the Main ReactJS App](https://blog.komand.com/how-to-render-components-outside-the-main-react-app)
+* [Watch Out for Undefined State](https://daveceddia.com/watch-out-for-undefined-state) Dave Ceddia @dceddia 
 
 #PATENTES
 
@@ -541,29 +565,66 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [Migrar con seguridad a React](https://www.youtube.com/watch?v=sXDZBxbRRag&list=PLNBNS7NRGKMG3uLrm5fgY02hJ87Wzb4IU&index=1) Jamis Charles
 
 #CSS y React
+* Ver esto: 🔥 💯 [Styling React.JS applications](https://www.youtube.com/watch?v=19gqsBc_Cx0) Max Stoiber @mxstbr
 
 **¿Qué pasa con los estilos en React?**
 
-* [Componentes React reutilizables con estilos en línea reemplazables](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
-* [Estilos en Línea](https://facebook.github.io/react/tips/inline-styles.html)
+Puedes utilizar CSS simple o cualquier preprocesador (Sass, Less etc ...) con React. React genera marcado HTML estándar, así técnicamente puedes seguir haciendo lo que has estado haciendo hasta ahora.
+
+> El uso de CSS para diseñar nuestro contenido de React es muy sencillo. Debido a que React termina generando las etiquetas HTML habituales, todos los trucos CSS que ha aprendido a lo largo de los años para dar estilo al HTML siguen aplicándose. -  kirupa
+
+* [What to use for React styling? ](http://andrewhfarmer.com/how-to-style-react) Andrew H Farmer
+* [Styling React](http://survivejs.com/react/advanced-techniques/styling-react) survivejs.com
+* [Styling in React](https://www.kirupa.com/react/styling_in_react.htm) kirupa
+* [Styling React Components in JavaScript](https://www.youtube.com/watch?v=0aBv8dsZs84) Michael Chan
+
+
+**¿Puedo Utilizar Bootstrap con React?**
+* [React-Bootstrap](https://react-bootstrap.github.io) - Componentes Bootstrap 3 components hechos con React
+* [bootstrap-loader](https://github.com/shakacode/bootstrap-loader) - Carga los estilos y scripts de Bootstrap con Webpack
+
+### Dando estilos a nivel de Componente
+
+>  Existen varios enfoques para React que nos permiten dar estilos a nivel de componente. - survivejs.com
+
+**¿Qué repositorios debo revisar para dar estilo a nivel de componentes?**
+
+* [styled-components](https://github.com/styled-components/styled-components) + [Styling React Applications](https://youtu.be/1Urj4TZ5BLI) @mxstbr 
+* [glamor](https://github.com/threepointone/glamor) @threepointone
+* [aphrodite](https://github.com/Khan/aphrodite)- Khan Academy
+
+Nota: ver también - [Styled components o Glamor?](https://www.reddit.com/r/reactjs/comments/5eq8ew/styled_components_or_glamor)
+
+
+**Cual es la diferencia entre "estilos en linea" y “CSS-in-JS”?**
+* [Writing your styles in JS ≠ writing inline styles](http://mxstbr.blog/2016/11/inline-styles-vs-css-in-js) Max Stoiber @mxstbr
+
+**Solo necesito dar unos estilos en linea simples... ¿Cuál es la manera mas sencilla de utilizar para dar estilos en línea en React?**
+
+* [React Docs, estilos en línea](https://facebook.github.io/react/docs/dom-elements.html#style)
+* [classnames](https://github.com/JedWatson/classnames) - A simple javascript utility for conditionally joining classNames together. @JedWatson
+
+**¿Qué recursos están disponibles para ver los pros y los contras de los estilos en línea y CSS en JS?**
 * [PANEL ON 'INLINE STYLES'](http://shoptalkshow.com/episodes/180-panel-on-inline-styles) @ShopTalkShow
 * [CSS en JS puede que no sea la solución a todos sus problemas](https://blog.grommet.io/post/2016/08/10/css-in-js-may-not-be-the-solution-to-all-your-problems) Alan Souza
-* [CSS en JS + CSS Modules](http://www.dadsindev.com/12)
-* [CSS en JS: charla técnica](https://www.youtube.com/watch?v=BXOF_8jDdf8) Kent C. Dodds & Sarah Drasner
+* [CSS in JS + CSS Modules](http://www.dadsindev.com/12)@dadsindev
+* [CSS in JS tech chat](https://www.youtube.com/watch?v=BXOF_8jDdf8) Kent C. Dodds & Sarah Drasner
 
-**¿Hay alguna herramienta disponible para convertir 'CSS' a 'CSS en JS'?**
+**¿Qué hay sobre CSS Modules para dar estilos?**
+* [css-modules](https://github.com/css-modules/css-modules) @markdalgleish
+* [CSS Modules con ejemplos](http://andrewhfarmer.com/css-modules-by-example) Andrew H Farmer
 
-* [convertir 'CSS' en 'CSS in JS'](https://jsbin.com/dugija/edit?js,output) Kent C. Dodds
+**Hay demasiadas opciones sobre CSS en JS ¿Como puedo compararlas?** 
+* [React: CSS en JS, comparativa de técnicas](https://github.com/MicheleBertoli/css-in-js) Michele Bertoli @MicheleBertoli
+* [Comparativa de Librerías "CSS en JS" en React](https://github.com/FormidableLabs/radium/tree/master/docs/comparison - radium)
 
-#Testeo
+**¿Cómo puedo diseñar un componente que sea muy reutilizable y personalizable?**
+* [Reusable React Component with Overridable Inline CSS Styles](http://staxmanade.com/2016/06/reusable-react-component-with-overridable-inline-css-styles/)
+
+#Testing
 
 * [Testeando Aplicaciones React](https://www.youtube.com/watch?v=eWN8F_WOBAQ) Jack Franklin
 * [La gente parece reírse de esto, pero creo que es realmente bastante razonable](https://twitter.com/dan_abramov/status/762257231471579136) Dan Abramov @dan_abramov
-
-#Vídeos de Conferencias
-* [React.js Conf 2016](https://www.youtube.com/watch?v=MGuKhcnrqGA&list=PLb0IAmt7-GS0M8Q95RIc2lOM6nc77q1IY)
-* [ReactEurope](https://www.youtube.com/channel/UCorlLn2oZfgOJ-FUcF2eZ1A)
-* [ReactRally](https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw)
 
 #Contribuyendo a React JS
 
@@ -583,6 +644,9 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [REACT INTERNALS](https://zackargyle.github.io/react-internals-slides/#/?_k=7f19z9) Zack Argyle @ZackArgyle
 
 #React Fiber
+
+**¿Qué, por qué y cómo?**
+* [Why, What, and How of React Fiber with Dan Abramov and Andrew Clark](https://youtu.be/crM1iRVGpGQ?list=PLV5CVI1eNcJi8sor_aQ2AzOeQ3On3suOr)
 
 **¿Qué es React Fiber?**
 
@@ -607,6 +671,10 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * http://courses.reactjsprogram.com/courses/reactjsprogrambundle
 * https://LearnRedux.com
 * https://egghead.io/courses/manage-complex-state-in-react-apps-with-mobx
+* https://www.udemy.com/react-redux
+* https://www.awesomereact.com
+
+Ver también [Conference Videos](https://www.awesomereact.com/conferences)
 
 #Accesibilidad (A11Y)
 
@@ -624,9 +692,9 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [React to the Future - Slide Deck](http://elijahmanor.com/talks/react-to-the-future/dist) Elijah Manor @elijahmanor
 * [React Things - PDF Slides](https://react.rocks/blog/images/React_Intro_sept_2016.pdf) Jeff Winkler @winkler1
 
-#Entrenamiento
+#Cursos
 
-**¿Dónde puedo obtener entrenamiento sobre React?**
+**¿Dónde puedo tener cursos sobre React?**
 <hr>
 
 *Micheal Jackson* @mjackson & *Ryan Florence* @ryanflorence
@@ -666,3 +734,18 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 * [quiz.md](https://gist.github.com/gaearon/8fa9fdd2c4197ee0b52894877bf587a4) Dan Abramov @dan_abramov
 * [5 Essential React.js Interview Questions](https://www.codementor.io/reactjs/tutorial/5-essential-reactjs-interview-questions)
 * [The Vital Guide to React.js Interviewing](https://chandanpandey.com/2016/10/27/the-vital-guide-to-react-js-interviewing)
+* [React Interview Questions](https://tylermcginnis.com/react-interview-questions) Tyler McGinnis @tylermcginnis33
+
+#Herramientas
+
+**¿Qué herramientas para desarrolladores hay disponibles para React?**
+
+* [StoryBook](https://getstorybook.io/)  (A visual way to develop your UI components. Show them in different states and develop them interactively).  `Ver` [Ejemplo StoryBook](http://airbnb.io/react-dates/) +  [React Storybooks meets Create React App](https://voice.kadira.io/react-storybooks-meets-create-react-app-ac8a3f32cc79#.fcah86vcb)
+* [React Developer Tools](https://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html)
+* [why-did-you-update](https://github.com/garbles/why-did-you-update) - Puts your console on blast when React is making unnecessary updates.
+* [Herramientas de rendimiento](https://facebook.github.io/react/docs/perf.html)
+
+#Renderizado desde el servidor
+
+**¿Necesito renderizado desde el servidor (Server-Side Rendering)?**
+* [Should I use React Server-Side Rendering?](http://andrewhfarmer.com/server-side-render/)
