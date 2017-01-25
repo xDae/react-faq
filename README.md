@@ -22,11 +22,11 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 **La documentación oficial de React es un gran recurso**
 * [Documentación Oficial de React](https://facebook.github.io/react/docs/hello-world.html)
 
-**Additional information to start with**
-* [Pete Hunt: React: Rethinking best practices (JSConf EU 2013)](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
-* [React in 7 Minutos](https://egghead.io/lessons/react-react-in-7-minutes) this is a slightly dated but still really good starter
+**Información adicional para empezar**
+* [Pete Hunt: React: Rehaciendo las buenas prácticas (JSConf EU 2013)](https://www.youtube.com/watch?v=x7cQ3mrcKaY)
+* [React en 7 Minutos](https://egghead.io/lessons/react-react-in-7-minutes) this is a slightly dated but still really good starter
 * [Introducción completa a React - React, Webpack, Babel, Redux, React Router, SSR](https://btholt.github.io/complete-intro-to-react/) Brian Holt(@holtbt) for Frontend Masters worshop
-* [React "Aha" Moments](https://tylermcginnis.com/react-aha-moments) Tyler McGinnis @tylermcginnis33
+* [Los momentos "Aha" con React](https://tylermcginnis.com/react-aha-moments) Tyler McGinnis @tylermcginnis33
 * [Todas las cosas terribles que hice la primera vez que escribí una Aplicación Compleja con React](https://youtu.be/Fk--XUEorvc?t=20666) Raquel @raquelxmoss
 * [Introducción a React](https://mva.microsoft.com/en-US/training-courses/introduction-to-react-16635?l=4wrKgdJrC_206218965) Eric W. Greene / Microsoft Virtual Academy
 
@@ -43,7 +43,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 - [Tipos de Componentes](#tipos-de-componentes)
 - [Buscando Componentes](#buscando-componentes)
 - [Propiedades](#propiedades)
-- [Prototipos](#prototipos)
+- [Tipos de Propiedades](#tipos-de-propiedades)
 - [Estado](#estado)
 - [Children API](#children-api)
 - [Binding](#binding)
@@ -299,18 +299,18 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 * [Diferencias entre require() y pasar un objeto por propiedades o contexto](http://stackoverflow.com/questions/39111775/differences-between-require-and-passing-an-object-via-prop-or-context/39111942) Dan Abramov @dan_abramov
 
-#Prototipos
+#Tipos de Propiedades
 
->Los Prototipos (PropTypes) son esencialmente un diccionario en el que se definen qué propiedades necesita su componente y de que tipo(s) deben ser. - Niels Gerritsen
+>Los Tipos de propiedades (PropTypes) son esencialmente un diccionario en el que se definen qué propiedades necesita su componente y de que tipo(s) deben ser. - Niels Gerritsen
 
-**¿Qué son los Prototipos?**
-* [¿Qué son los Prototipos?](https://themeteorchef.com/snippets/what-are-proptypes) Ryan Glover @themeteorchef
+**¿Qué son los Tipos de Propiedades?**
+* [¿Qué son los Tipos de Propiedades?](https://themeteorchef.com/snippets/what-are-proptypes) Ryan Glover @themeteorchef
 
-**¿Por qué son importantes los Prototipos en React?**
+**¿Por qué son importantes los Tipos de Propiedades en React?**
 * [Porque son importantes los Prototipos en React](http://wecodetheweb.com/2015/06/02/why-react-proptypes-are-important)  Niels Gerritsen @NielsG89
 
-**¿Cómo puedo validar Propiedades?**
-* [Mejor validación de Propiedades en React](https://medium.com/@MoeSattler/better-prop-validation-in-react-cc83590d311f#.wdhbsrlgj) Moe Sattler @travelperk
+**¿Cómo puedo validar los Tipos de Propiedades?**
+* [Mejor validación de Tipos de Propiedades en React](https://medium.com/@MoeSattler/better-prop-validation-in-react-cc83590d311f#.wdhbsrlgj) Moe Sattler @travelperk
 
 #Estado
 
@@ -674,13 +674,13 @@ Nota: ver también - [Styled components o Glamor?](https://www.reddit.com/r/reac
 * https://www.udemy.com/react-redux
 * https://www.awesomereact.com
 
-Ver también [Conference Videos](https://www.awesomereact.com/conferences)
+Ver también [Videos de Conferencias](https://www.awesomereact.com/conferences)
 
 #Accesibilidad (A11Y)
 
 **¿Qué pasa con la accesibilidad?**
 
-* [How to design for accessibility](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility ) *Note:* not specific to React but a solid primer on the topic
+* [Cómo diseñar para la accesibilidad](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility ) *Note:* not specific to React but a solid primer on the topic
 
 <hr>
 
