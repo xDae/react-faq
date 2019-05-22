@@ -2,7 +2,7 @@
 
 Esta guía pretende reunir contenido de calidad sobre los conceptos básicos de React en un solo sitio para tener una referencia rápida.
 
-Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien).
+Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensúciate (está bien).
 
 ### Otros idiomas
 [🇬🇧 English](https://github.com/timarney/react-faq)
@@ -11,7 +11,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 # Comienzo
 
->Hay mucho que aprender, pero si se desglosa, hay algunos conceptos clave en los que enfocarse. JSX, elementos React, Componentes, Métodos de ciclo de vida, Propiedades y Estado. Los siguientes artículos le iniciarán en el camino hacia el aprendizaje de React.
+>Hay mucho que aprender, pero si se desglosa, hay algunos conceptos clave en los que enfocarse. JSX, elementos React, Componentes, Métodos de ciclo de vida, Propiedades y Estado. Los siguientes artículos te iniciarán en el camino hacia el aprendizaje de React.
 
 **No sé nada de React, ¿que debería ver / leer antes de empezar?**
 * [Pensando en React - Pete Hunt](https://facebook.github.io/react/docs/thinking-in-react.html)
@@ -90,7 +90,7 @@ Recuerda que todos estamos aprendiendo. Lea, haz pruebas, ensuciaté (está bien
 
 **¿Cómo creo un nuevo Proyecto con React?**
 
-> Depende de lo que estas buscando. Con/sin configuración, server-rendering etc... aqui hay algunos para considerar. Obviamente, también puedes configurar React desde cero.
+> Depende de lo que estás buscando. Con/sin configuración, server-rendering etc... aquí hay algunos a considerar. Obviamente, también puedes configurar React desde cero.
 
 * [create-react-app](https://github.com/facebookincubator/create-react-app) No configuration or complicated folder structures, just the files you need to build your app.
 * [nwb](https://github.com/insin/nwb) Crea aplicaciones React sin configuración (hasta que lo necesites)
@@ -203,7 +203,7 @@ Ver :  https://twitter.com/mxstbr/status/790084862954864640 Max Stoiber @mxstbr
 
 # Métodos del Ciclo de Vida
 
->Los componentes tienen varios "métodos de ciclo de vida" que le permiten anular / ejecutar código en momentos concretos.
+>Los componentes tienen varios "métodos de ciclo de vida" que te permiten anular / ejecutar código en momentos concretos.
 
 **¿Qué son los métodos del ciclo de vida?**
 
@@ -235,7 +235,7 @@ Los componentes se pueden utilizar (compuestos) de muchas maneras, ver los sigui
 
 **¿Cómo decido qué tipo de Componente utilizar?**
 
->Se reduce a pocos factores... uno de los principales es dedicir lo que un componente debe hacer.
+>Se reduce a pocos factores... uno de los principales es decidir lo que un componente debe hacer.
 Ver: [Some Thoughts on Function Components in React](https://medium.com/javascript-inside/some-thoughts-on-function-components-in-react-cb2938686bc7#.2oazdyli1) from A. Sharif @sharifsbeat for some help deciding.
 
 También:
@@ -285,15 +285,15 @@ También:
 
 **¿Qué son las Propiedades?**
 
->props (abreviatura de  propiedades) son la configuración de un Componente,  sus opciones si es posible. Son recibidos desde arriba y son inmutables en lo que respecta al Componente que los recibe. - react-guide
+>props (abreviatura de propiedades) son la configuración de un Componente, sus opciones si es posible. Son recibidos desde arriba y son inmutables en lo que respecta al Componente que los recibe. - react-guide
 
 Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
 
-**¿Como puedo pasar Propiedades?**
+**¿Cómo puedo pasar Propiedades?**
 
 * [Transfiriendo Propiedades](https://facebook.github.io/react/docs/transferring-props.html)
 
-**¿Como paso valores Booleanos?**
+**¿Cómo paso valores Booleanos?**
 
 * [¿`<Foo bar={true} />` y `<Foo bar>` en JSX es lo mismo?](https://twitter.com/Jack_Franklin/status/768735664485568512) Jack Franklin @Jack_Franklin
 
@@ -303,7 +303,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 # Tipos de Propiedades
 
->Los Tipos de propiedades (PropTypes) son esencialmente un diccionario en el que se definen qué propiedades necesita su componente y de que tipo(s) deben ser. - Niels Gerritsen
+>Los Tipos de propiedades (PropTypes) son esencialmente un diccionario en el que se definen qué propiedades necesita tu componente y de que tipo(s) deben ser. - Niels Gerritsen
 
 **¿Qué son los Tipos de Propiedades?**
 * [¿Qué son los Tipos de Propiedades?](https://themeteorchef.com/snippets/what-are-proptypes) Ryan Glover @themeteorchef
@@ -316,7 +316,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 # Estado
 
-> En un sentido, "estado" significa la representación visual actual de la aplicación en la pantalla... En el sentido React, el "estado" es un objeto que representa las partes de la aplicación que pueden cambiar. Cada componente puede mantener su propio estado, que vive en un objeto llamado this.state. - Dave Ceddia
+> En un sentido, "estado" significa la representación visual actual de la aplicación en la pantalla... En el sentido React, el "estado" es un objeto que representa las partes de la aplicación que pueden cambiar. Cada componente puede mantener su propio estado, que vive en un objeto llamado `this.state`. - Dave Ceddia
 
 **¿Qué es el Estado en React?**
 
@@ -341,7 +341,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 * [Thinking Statefully](https://daveceddia.com/thinking-statefully) Dave Ceddia @dceddia
 
 **I heard you can pass a function to setState when should do that?**
-**Escuché que se puede pasar una función a setState ¿cuando debería hacer eso?**
+**Escuché que se puede pasar una función a setState ¿cuándo debería hacer eso?**
 * [Usando una funció en `setState` en vez de un objeto](https://medium.com/@shopsifter/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1#.h3fokbh9a) Sophia Shoemaker
 
 # Children API
@@ -373,7 +373,7 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 * [La respuesta es devolver algo (return) lo antes posible](https://medium.com/@SimonRadionov/return-as-soon-as-you-know-the-answer-dec6369b9b67#.82kxymyki) @SimonRadionov
 
-#Claves
+# Claves
 >React utiliza las Claves ([keys](https://facebook.github.io/react/docs/reconciliation.html#keys)) para ayudar con la reconciliación (es decir, cómo calcula la diferencia del DOM para cada procesamiento).
 
 ```
@@ -397,9 +397,9 @@ Ver : [props vs state](https://github.com/uberVU/react-guide/blob/master/props-v
 
 # Referencias
 
->El atributo ref permite guardar una referencia a un elemento React específico o a un componente devuelto por la función render(). Esto puede ser valioso cuando se necesita una referencia, desde dentro de un componente, a algún elemento o componente contenido en la función render(). - reactenlightenment.com
+>El atributo `ref` permite guardar una referencia a un elemento React específico o a un componente devuelto por la función `render()`. Esto puede ser valioso cuando se necesita una referencia, desde dentro de un componente, a algún elemento o componente contenido en la función `render()`. - reactenlightenment.com
 
-**¿Qué son las Referencias (refs) y porqué las Referencias de tipo Sring son malas?**
+**¿Qué son las Referencias (refs) y porqué las Referencias de tipo String son malas?**
 
 * [Refs to Components](https://facebook.github.io/react/docs/more-about-refs.html)
 * [Why do you use findDOMNode()?](https://twitter.com/dan_abramov/status/752936646602031104) Dan Abramov @dan_abramov
@@ -575,7 +575,7 @@ Via Loren Stewart @lorenstewart111 [React.js Forms: Controlled Components](http:
 
 Puedes utilizar CSS simple o cualquier preprocesador (Sass, Less etc ...) con React. React genera marcado HTML estándar, así técnicamente puedes seguir haciendo lo que has estado haciendo hasta ahora.
 
-> El uso de CSS para diseñar nuestro contenido de React es muy sencillo. Debido a que React termina generando las etiquetas HTML habituales, todos los trucos CSS que ha aprendido a lo largo de los años para dar estilo al HTML siguen aplicándose. -  kirupa
+> El uso de CSS para diseñar nuestro contenido de React es muy sencillo. Debido a que React termina generando las etiquetas HTML habituales, todos los trucos CSS que has aprendido a lo largo de los años para dar estilo al HTML siguen aplicándose. -  kirupa
 
 * [What to use for React styling? ](http://andrewhfarmer.com/how-to-style-react) Andrew H Farmer
 * [Styling React](http://survivejs.com/react/advanced-techniques/styling-react) survivejs.com
@@ -600,10 +600,10 @@ Puedes utilizar CSS simple o cualquier preprocesador (Sass, Less etc ...) con Re
 Nota: ver también - [Styled components o Glamor?](https://www.reddit.com/r/reactjs/comments/5eq8ew/styled_components_or_glamor)
 
 
-**Cual es la diferencia entre "estilos en linea" y “CSS-in-JS”?**
+**Cual es la diferencia entre "estilos en línea" y “CSS-in-JS”?**
 * [Writing your styles in JS ≠ writing inline styles](http://mxstbr.blog/2016/11/inline-styles-vs-css-in-js) Max Stoiber @mxstbr
 
-**Solo necesito dar unos estilos en linea simples... ¿Cuál es la manera mas sencilla de utilizar para dar estilos en línea en React?**
+**Solo necesito dar unos estilos en línea simples... ¿Cuál es la manera más sencilla de utilizar para dar estilos en línea en React?**
 
 * [React Docs, estilos en línea](https://facebook.github.io/react/docs/dom-elements.html#style)
 * [classnames](https://github.com/JedWatson/classnames) - A simple javascript utility for conditionally joining classNames together. @JedWatson
@@ -632,7 +632,7 @@ Nota: ver también - [Styled components o Glamor?](https://www.reddit.com/r/reac
 
 # Contribuyendo a React JS
 
-**¿Dónde puedo aprender sobre como contribuir a React JS?**
+**¿Dónde puedo aprender sobre cómo contribuir a React JS?**
 
 * [Contribuyendo a React JS](https://www.youtube.com/watch?v=wUpPsEcGsg8) Kent C. Dodds
 
@@ -640,7 +640,7 @@ Nota: ver también - [Styled components o Glamor?](https://www.reddit.com/r/reac
 
 * [React en el Servidor para principiantes](https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app) Luciano Mammino @loige
 
-# Pronfundizando en React
+# Profundizando en React
 * [Notas de implementación - Cómo funciona realmente React](https://facebook.github.io/react/contributing/implementation-notes.html) Dan Abramov @dan_abramov
 * [Construyendo una Aplicación React desde 0](https://www.youtube.com/watch?v=_MAD4Oly9yg) Paul O'Shannessy @zpao
 * [React Architecture – OSCON](http://blog.vjeux.com/2014/javascript/react-architecture-oscon.html) Christopher Chedeau @vjeux
@@ -684,7 +684,7 @@ Ver también [Videos de Conferencias](https://www.awesomereact.com/conferences)
 
 **¿Qué pasa con la accesibilidad?**
 
-* [Cómo diseñar para la accesibilidad](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility ) *Note:* not specific to React but a solid primer on the topic
+* [Cómo diseñar para la accesibilidad](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility) *Note:* not specific to React but a solid primer on the topic
 
 <hr>
 
